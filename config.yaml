@@ -1,0 +1,39 @@
+# AI 配置
+ai:
+  # API 密钥从环境变量 API_KEY 自动读取
+  # 请在 .env 文件中设置: API_KEY=sk-your-key
+  # 不要在此文件中直接填写 API 密钥
+
+  # API 基础 URL（根据服务商修改）
+  # OpenAI:      https://api.openai.com/v1
+  # DeepSeek:    https://api.deepseek.com
+  # OpenRouter:  https://openrouter.ai/api/v1
+  # Ollama:      http://localhost:11434/v1
+  # LM Studio:   http://localhost:1234/v1
+  api_base: https://openrouter.ai/api/v1
+
+  # 模型名称（根据服务商修改）
+  # OpenAI:      gpt-4o-mini, gpt-4, gpt-3.5-turbo
+  # DeepSeek:    deepseek-chat, deepseek-coder
+  # OpenRouter:  anthropic/claude-3.5-sonnet, google/gemini-pro
+  # Ollama:      llama3.2, qwen2.5, deepseek-r1
+  # LM Studio:   本地模型名称
+  model: openai/gpt-oss-120b
+
+  # 请求超时（秒）
+  timeout: 30
+
+  # 最大重试次数
+  max_retries: 3
+
+# 显示配置
+display:
+  # 语言设置 (zh: 中文, en: 英文)
+  language: zh
+
+  # 显示 emoji
+  show_emoji: true
+
+# 热键配置
+hotkey:
+  trigger: ctrl+shift+e
